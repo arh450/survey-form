@@ -6,11 +6,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maine Survey Form</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Marcellus+SC&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
+    <h1 id="title">State of Maine Survey</h1>
 
+    <p id="description">Help us improve Maine</p>
+
+    <form id="survey-form">
+
+        <label id="name-label" for="name">
+            <p>Name:</p>
+        </label>
+
+        <input id="name" type="text" placeholder="Enter Your Name" required>
+
+        <label id="email-label" for="email">
+            <p>Email:</p>
+        </label>
+
+        <input id="email" type="email" placeholder="Enter Your email" required>
+
+        <label id="number-label" for="number">
+            <p>Age:</p>
+        </label>
+
+        <input id="number" type="number" placeholder="Age" min="18" max="99" required>
+
+        <p>Would you consider leaving the state?</p>
+        <select id="dropdown">
+
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="maybe">Maybe</option>
+        </select>
+
+        <p>Do You live in the following counties?</p>
+
+        <input type="radio" name="county" value="1">York</input>
+        <br>
+        <input type="radio" name="county" value="2">Somerset</input>
+        <br>
+        <input type="radio" name="county" value="3">Cumberland</input>
+        <br>
+        <input type="radio" name="county" value="4">Other</input>
+        <br>
+
+        <p>Which of the following states would you live in? <small>(select all that apply)</small></p>
+
+        <input type="checkbox" name="state" value="1">Iowa</input>
+        <br>
+        <input type="checkbox" name="state" value="2">Alaska</input>
+        <br>
+        <input type="checkbox" name="state" value="3">Montana</input>
+        <br>
+        <input type="checkbox" name="state" value="4">Maryland</input>
+        <br>
+        <input type="checkbox" name="state" value="5">Nevada</input>
+        <br>
+
+        <p>Please add any other comments/feedback you may have</p>
+        <textarea id="comment" rows="4" cols="40">Add Feedback Here...</textarea>
+
+        <br>
+
+        <input id="submit" type="submit" value="Submit">
+
+
+    </form>
 </body>
 
 </html>
